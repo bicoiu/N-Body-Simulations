@@ -1,0 +1,1 @@
+g++ -O3 -pthread nbody_pthreads.cpp -o nbody_pthreads

@@ -1,0 +1,1 @@
+mpic++ -O3 nbody_mpi.cpp -o nbody_mpi

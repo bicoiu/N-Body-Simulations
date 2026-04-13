@@ -1,0 +1,1 @@
+MPI time: 47.7241 sec

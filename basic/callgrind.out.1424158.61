@@ -1,0 +1,139 @@
+# callgrind format
+version: 1
+creator: callgrind-3.18.1
+pid: 1424158
+cmd:  ./nbody_seq 2000 2000
+part: 61
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 601285155 - 611285421
+desc: Trigger: --dump-every-bb=10000000
+
+positions: line
+events: Ir
+summary: 98401999
+
+
+ob=(1) /usr/lib64/ld-2.28.so
+fl=(1) ???
+fn=(0) 0x0000000000005fe0
+cob=(8) /export/home/acs/stud/i/ionut.bicoiu/proiect-app/nbody/basic/nbody_seq
+cfi=(185) ???
+cfn=(684) (below main)
+calls=0 0 
+0 98401999
+
+ob=(3) /usr/lib64/libc-2.28.so
+fl=(186) /usr/src/debug/glibc-2.28-196.el8.x86_64/csu/../csu/libc-start.c
+fn=(686) (below main)
+cob=(8)
+cfi=(185)
+cfn=(1044) main
+calls=0 0 
+314 98401999
+
+ob=(4) /usr/lib64/libm-2.28.so
+fl=(261) /usr/src/debug/glibc-2.28-196.el8.x86_64/math/w_sqrt_compat.c
+fn=(1250) sqrt
+30 399867
++1 1199601
++3 399867
+cfi=(262) /usr/src/debug/glibc-2.28-196.el8.x86_64/math/../sysdeps/x86_64/fpu/e_sqrt.c
+cfn=(1252) __sqrt_finite
+calls=399867 -10 
+* 1199601
+
+fl=(262)
+fn=(1252)
+24 399867
++3 399867
++3 399867
+
+ob=(8)
+fl=(185)
+fn=(1118) std::vector<Particle, std::allocator<Particle> >::operator[](unsigned long)
+0 44801862
+
+fn=(1244) computeForces(std::vector<Particle, std::allocator<Particle> >&, int, double)
+0 4802192
+cfn=(1118)
+calls=399866 0 
+0 5598124
+0 3198928
+cfn=(1118)
+calls=399866 0 
+0 5598124
+0 4398526
+cfn=(1118)
+calls=399866 0 
+0 5598124
+0 3198928
+cfn=(1118)
+calls=399866 0 
+0 5598138
+0 4398537
+cfn=(1118)
+calls=399867 0 
+0 5598138
+0 3198936
+cfn=(1118)
+calls=399867 0 
+0 5598138
+0 7597473
+cob=(4)
+cfi=(261)
+cfn=(1250)
+calls=399867 30 
+0 3198936
+0 399867
+0 5998005
+cfn=(1118)
+calls=399867 0 
+0 5598138
+0 3998670
+cfn=(1118)
+calls=399867 0 
+0 5598138
+0 9199339
+cfn=(1118)
+calls=200 0 
+0 2800
+0 2000
+cfn=(1118)
+calls=200 0 
+0 2800
+0 2400
+cfn=(1118)
+calls=200 0 
+0 2800
+0 2000
+cfn=(1118)
+calls=200 0 
+0 2800
+0 2400
+cfn=(1118)
+calls=200 0 
+0 2800
+0 2000
+cfn=(1118)
+calls=200 0 
+0 2800
+0 1000
+
+fn=(684)
+cob=(3)
+cfi=(186)
+cfn=(686)
+calls=0 139 
+0 98401999
+
+fn=(1044)
+cfn=(1244)
+calls=0 0 
+0 98401999
+
+totals: 98401999
